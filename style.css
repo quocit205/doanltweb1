@@ -1,27 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
-/* Mặc định cho màn hình lớn */
-body {
-    font-size: 18px;
-    margin: 20px;
-}
-
-/* Điều chỉnh cho màn hình nhỏ hơn (dưới 768px) */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
-        margin: 10px;
-    }
-}
-
-/* Điều chỉnh cho màn hình rất nhỏ (dưới 480px) */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-        margin: 5px;
-    }
-}
-
-
 :root{
     --green:#27ae60;
     --black:#192a56;
