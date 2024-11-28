@@ -369,7 +369,7 @@ body {
 
 /* Tối ưu cho màn hình nhỏ hơn 768px (tablet) */
 @media (max-width: 768px) {
-    .container {
+    .main-container {
         width: 100%;
         flex-wrap: wrap; /* Chuyển sang chế độ xếp chồng */
         justify-content: center; /* Canh giữa các phần tử */
@@ -381,10 +381,10 @@ body {
     body {
         font-size: 14px; /* Giảm kích thước chữ */
     }
-    .container {
+    .main-container {
         padding: 10px; /* Tăng khoảng trống cho giao diện thoáng */
     }
-    .container div {
+    .main-container div {
         width: 100%; /* Mỗi phần tử chiếm toàn bộ chiều rộng */
         margin-bottom: 10px; /* Thêm khoảng cách giữa các phần tử */
     }
