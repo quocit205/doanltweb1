@@ -354,44 +354,9 @@ section:nth-child(even){
 }
 /* Thiết lập chung */
 body {
-    font-size: 16px;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.main-container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch; /* Đồng bộ chiều cao */
-    gap: 20px; /* Khoảng cách giữa các phần tử */
-    box-sizing: border-box;
-}
-
-/* Tối ưu cho màn hình nhỏ hơn 768px (tablet) */
-@media (max-width: 768px) {
-    .main-container {
-        width: 100%;
-        flex-wrap: wrap; /* Xếp chồng các phần tử */
-        justify-content: center;
-        gap: 15px; /* Thu nhỏ khoảng cách giữa các phần tử */
-    }
-}
-
-/* Tối ưu cho màn hình nhỏ hơn 480px (mobile) */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px; /* Giảm kích thước chữ */
-    }
-    .main-container {
-        padding: 10px; /* Tăng khoảng trống cho giao diện thoáng */
-    }
-    .main-container > * {
-        width: 100%; /* Mỗi phần tử chiếm toàn bộ chiều rộng */
-        margin-bottom: 10px; /* Khoảng cách giữa các phần tử */
-    }
 }
 
 /* Tiêu đề */
