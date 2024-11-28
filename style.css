@@ -365,14 +365,18 @@ body {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: stretch; /* Đồng bộ chiều cao */
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+    box-sizing: border-box;
 }
 
 /* Tối ưu cho màn hình nhỏ hơn 768px (tablet) */
 @media (max-width: 768px) {
     .main-container {
         width: 100%;
-        flex-wrap: wrap; /* Chuyển sang chế độ xếp chồng */
-        justify-content: center; /* Canh giữa các phần tử */
+        flex-wrap: wrap; /* Xếp chồng các phần tử */
+        justify-content: center;
+        gap: 15px; /* Thu nhỏ khoảng cách giữa các phần tử */
     }
 }
 
@@ -384,9 +388,9 @@ body {
     .main-container {
         padding: 10px; /* Tăng khoảng trống cho giao diện thoáng */
     }
-    .main-container div {
+    .main-container > * {
         width: 100%; /* Mỗi phần tử chiếm toàn bộ chiều rộng */
-        margin-bottom: 10px; /* Thêm khoảng cách giữa các phần tử */
+        margin-bottom: 10px; /* Khoảng cách giữa các phần tử */
     }
 }
 
