@@ -129,7 +129,7 @@ header .icons #menu-bars{
 }
 /* banner */
 #banner {
-    width: 1500px%;
+    width: 1500px;
     background-image :url("images/banner.png");
     height: 463px;
     margin-top:40px;
