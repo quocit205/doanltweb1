@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
 :root{
     --green:#27ae60;
     --black:#192a56;
@@ -354,10 +355,11 @@ section:nth-child(even){
 }
 /* Thiết lập chung */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
 /* Tiêu đề */
 h1.heading {
   font-size: 36px;
@@ -819,7 +821,7 @@ a {
 }
 .footer .box-container .box .payment-img{
     margin-top: 2rem;
-    height: 4rem;
+    height: 3rem;
     display: block;
 }
 .footer .credit{
@@ -837,150 +839,159 @@ a {
 
 /* media queries  */
 
-@media (max-width:991px){
+@media (max-width: 991px) {
 
-    html{
-font-size:55%;
-    }
-    
-    header{
-        padding:1rem 2rem;
+    html {
+        font-size: 55%;
     }
 
-    section{
-        padding:2rem;
+    header {
+        padding: 1rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
     }
 }
-@media (max-width:768px){
 
-    header .icons #menu-bars{
+@media (max-width: 768px) {
+
+    header .icons #menu-bars {
         display: inline-block;
     }
 
-    header .navbar{
+    header .navbar {
         position: absolute;
-        top:100%; left:0; right:0;
-        background:#fff;
-        border-top: .1rem solid rgba(0,0,0,.2);
-        border-bottom: .1rem solid rgba(0,0,0,.2);
-        padding:1rem;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+        padding: 1rem;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    header .navbar.active{
+    header .navbar.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
-    header .navbar a{
+    header .navbar a {
         display: block;
-        padding:1.5rem;
-        margin:1rem;
+        padding: 1.5rem;
+        margin: 1rem;
         font-size: 2rem;
-        background:#eee;
+        background: #eee;
     }
-#search-form{
-    position: fixed;
-    top:-110%; left:0; 
-    height:100%; width:100%;
-    z-index: 1004;
-    background:rgba(0,0,0,.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding:0 1rem;
+
+    #search-form {
+        position: fixed;
+        top: -110%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1004;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
     }
-    .order form .inputBox .input{
-        width:100%;    
+
+    .order form .inputBox .input {
+        width: 100%;
     }
+
     .footer {
         text-align: center;
     }
-    .bottom-contact{display:none}
-    @media  (max-width: 767px) {	
-    .bottom-contact{display: block;
-        position: fixed;
-        bottom: 0;
-        background: white;
-        width: 100%;
-        z-index: 99;
-        box-shadow: 2px 1px 9px  #0000008a;
-        border-top: 1px solid #eaeaea;}
-    .bottom-contact ul li{width: 25%; margin-bottom:0; 
-        float: left;
-        list-style: none;
-        text-align: center; font-size:13.5px;}
-    .bottom-contact ul li span{color:black}
-    .bottom-contact ul li img{    width: 35px;
-        margin-top: 3px;
-        margin-bottom: 0px;}
-     
-    .float-contact{display:none}
-    }
-    
-    .float-contact {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        z-index: 99999;
-    }
-    .chat-zalo {
-        background: #8eb22b;
-        border-radius: 20px;
-        padding: 0px 18px;
-        color: white;
-        display: block;
-        margin-bottom: 6px;
-    }
-    .chat-face {
-        background: #125c9e;
-        border-radius: 20px;
-        padding: 0px 18px;
-        color: white;
-        display: block;
-        margin-bottom: 6px;
-    }
-    .float-contact .hotline {
-        background: #d11a59 !important;
-        border-radius: 20px;
-        padding: 0 18px;
-        color: white;
-        display: block;
-        margin-bottom: 6px;
-    }
-    
-    .chat-zalo a, .chat-face a, .hotline a {
-        font-size: 15px;
-        color: white;
-        font-weight: normal;
-        text-transform: none;
-        line-height: 0;
-    }
-    
-    
 
-}
-.bottom-contact{display:none}
-@media  (max-width: 767px) {	
-.bottom-contact{display: block;
-    position: fixed;
-    bottom: 0;
-    background: white;
-    width: 100%;
-    z-index: 99;
-    box-shadow: 2px 1px 9px  #0000008a;
-    border-top: 1px solid #eaeaea;}
-.bottom-contact ul li{width: 25%; margin-bottom:0; 
-    float: left;
-    list-style: none;
-    text-align: center; font-size:13.5px;}
-.bottom-contact ul li span{color:black}
-.bottom-contact ul li img{    width: 35px;
-    margin-top: 3px;
-    margin-bottom: 0px;}
- 
-.float-contact{display:none}
-}
+    .bottom-contact {
+        display: none;
+    }
 
+    @media (max-width: 767px) {
+
+        .bottom-contact {
+            display: block;
+            position: fixed;
+            bottom: 0;
+            background: white;
+            width: 100%;
+            z-index: 99;
+            box-shadow: 2px 1px 9px #0000008a;
+            border-top: 1px solid #eaeaea;
+        }
+
+        .bottom-contact ul li {
+            width: 25%;
+            margin-bottom: 0;
+            float: left;
+            list-style: none;
+            text-align: center;
+            font-size: 13.5px;
+        }
+
+        .bottom-contact ul li span {
+            color: black;
+        }
+
+        .bottom-contact ul li img {
+            width: 35px;
+            margin-top: 3px;
+            margin-bottom: 0px;
+        }
+
+        .float-contact {
+            display: none;
+        }
+
+        .float-contact {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 99999;
+        }
+
+        .chat-zalo {
+            background: #8eb22b;
+            border-radius: 20px;
+            padding: 0px 18px;
+            color: white;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .chat-face {
+            background: #125c9e;
+            border-radius: 20px;
+            padding: 0px 18px;
+            color: white;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .float-contact .hotline {
+            background: #d11a59 !important;
+            border-radius: 20px;
+            padding: 0 18px;
+            color: white;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .chat-zalo a,
+        .chat-face a,
+        .hotline a {
+            font-size: 15px;
+            color: white;
+            font-weight: normal;
+            text-transform: none;
+            line-height: 0;
+        }
+    }
+}
+        
 .float-contact {
     position: fixed;
     bottom: 20px;
